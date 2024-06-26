@@ -1,0 +1,11 @@
+{
+	"dataAr": {
+		"title": "هذه البيانات من ملف data-ar.json"
+	},
+	"dataEn": {
+		"title": "This data from data-en.json file"
+	},
+	"homeDataAr": {
+		"title": "هذه البيانات من ملف home-ar.json"
+	}
+}

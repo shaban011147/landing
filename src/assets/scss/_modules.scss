@@ -1,0 +1,40 @@
+body{
+}
+
+.product-card{
+    border: 1px solid #E5E5E5;
+    margin-bottom: 20px;
+
+    .product-img-c{
+        padding: 15px;
+        background: #F2F2F2;
+    }
+    .product-img{
+        @include aspect-ratio(3,2);
+    }
+    .product-body{
+        padding: 15px;
+
+        .product-title{
+            font-size: 18px;
+            font-weight: 700;
+            @include multiLineEllipsis(1.4,1);
+        }
+        .product-text{
+            font-size: 14px;
+            color: #000;
+            @include multiLineEllipsis(1.4,3);
+        }
+        .price{
+            color: $primaryColor;
+            font-size: 22px;
+            font-weight: 900;
+
+            span{
+                font-size: 16px;
+                color: #999999;
+                font-weight: 500;
+            }
+        }
+    }
+}
