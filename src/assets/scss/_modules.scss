@@ -1,5 +1,4 @@
 header {
-    height: 50px;
     background-color: #D1EDF5;
     
 
@@ -12,10 +11,7 @@ header {
 
 display: flex;
 gap: 10px;
-@media (min-width: 768px) {
 
-    display: none;
-                     }
 
 
 
@@ -35,15 +31,7 @@ gap: 10px;
       
 
 
-        .iqon{
-
-
-            @media (max-width: 768px) {
-
-display: none;
-                 }
-
-        }
+  
 
         ul {
 
@@ -197,7 +185,7 @@ margin-bottom: 22px;
   align-items: center;
     justify-content: center;
     display: flex;
-    height:100vh;
+    min-height:100vh;
 
   background-color: #D1EDF5;
   .container{
@@ -251,6 +239,10 @@ text-align: left;
             border: none;
             caret-color: red;
             padding: 18px 24px;
+            width: 100%;
+            &:focus-visible{
+              outline: none;
+            }
 
           }
           input[type="submit"] {
@@ -259,9 +251,9 @@ text-align: left;
             background-color: #2B59FF;
             color: #f6f5f5;
             cursor: pointer;
-    margin: 5px 10px 5px 100px ;     
+    margin: 5px  ;     
     
-            padding: 15.5 22px;
+            padding: 15.5px 22px;
     
     
     
@@ -491,59 +483,15 @@ margin-bottom: 60px;
 
   
    
-    .Resource-Management{
-
-    padding-top: 120px;
-    padding-bottom: 120px;
-      
-      .Management{
-
-
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-    
-        gap: 40px;
-    
+  
+  //  Payment
   
 
-.box{
 
-margin-left: 50px;
-  img{
-    width: 27.76px;
-    height: 30px;
-   margin-bottom: 30px;
-    
-
-  }
-  p{
-
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    color:#12141D ;
-     
-  }
-h5{
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: left;
-color:#12141D ;  
+ 
 
 }
-
-}
-
-
-    } 
-   }
-
-  //  Payment
-  .Payment{
+.Payment{
   background-color: #F8FAFC;
 padding-top: 89px;
 padding-bottom:120px ;
@@ -781,23 +729,73 @@ font-size: 35px;
 
     }
   }
+.Resource-Management{
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+    
+    .Management{
 
 
-  //  customers
-  .customers{
-    background-color: #F8FAFC;
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  
+      gap: 40px;
+  
+
+
+.box{
+
+margin-left: 50px;
+img{
+  width: 27.76px;
+  height: 30px;
+ margin-bottom: 30px;
+  
+
+}
+p{
+
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color:#12141D ;
+   
+}
+h5{
+font-family: Inter;
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+color:#12141D ;  
+
+}
+
+}
+
+
+  } 
+ }
+
+
+ //  customers
+ .customers{
+  background-color: #F8FAFC;
 
 padding-top: 120px;
 padding-bottom: 100px;
 width: 100%;
-    .make{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+  .make{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 h3{
 
-  font-family: Outfit;
+font-family: Outfit;
 font-size: 42px;
 font-weight: 700;
 line-height: 48px;
@@ -809,17 +807,17 @@ text-align: center;
 p{
 
 
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 30px;
-  text-align: center;
-  
+font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 30px;
+text-align: center;
+margin-bottom: 67px;
 }
 
 
 
-    }
+  }
 
 
 .people{
@@ -827,178 +825,180 @@ flex-wrap: wrap;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-gap: 40px;
+gap: 99px;
 
 
-        .card1 {
-         
-          max-width: 417px;
+      .card1 {
+       
+        max-width: 417px;
 
 p{
 
-  font-family: Inter;
+font-family: Inter;
 font-size: 21px;
 font-weight: 500;
 line-height: 32px;
 text-align: left;
 color: #18181B;
 padding-right: 63px;
+margin-top: 31px;
 
 }
 
 h5{
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: left;
-  margin-top: 22px;
+font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 28px;
+text-align: left;
+margin-top: 22px;
 
 }
 span{
 
-  font-family: Inter;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: right;
+font-family: Inter;
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+text-align: right;
 color:gray ;  
 
 
 }
-        
-        img {       
-      max-width: 100%;
-        
-  }    
-
-      }
-
-}
-
-
-  }
-  // decision
-  .decision{
-padding-top: 120px;
-    .make{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-h3{
-
-  font-family: Outfit;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 48px;
-color: #18181B;  
-max-width: 453px;
-text-align: center;
-
-
-}
-p{
-
-
-font-family: Plus Jakarta Sans;
-font-size: 18px;
-font-weight: 400;
-line-height: 28px;
-text-align: center;
-color:#12141D ;
-}
-
-
+      
+      img {       
+    max-width: 100%;
+      
+}    
 
     }
-    .business{
-      display: flex;
-      flex-wrap: wrap;
-      padding-top: 80px;
-      justify-content: center;
-      margin-bottom: 120px;
-      gap: 40px;
-      .card1{
-        box-shadow: 0px 0px 1px 0px ;
 
-max-width : 330px;
-padding: 30px;
-.Started{
-  background-color: #18181B;
-  padding : 13.5px   78.5px  13px  78.5px  ;
-color:#E4E4E7 ;
-display: block;
-text-align: center;
-border: 1px solid #E4E4E7;
-border-radius: 10px;
-margin-top: 30px;
-margin-bottom: 30px;
 }
 
-p{
 
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: left;
-  color:#52525B ;
+}
+// decision
+
+.decision{
+  padding-top: 120px;
+      .make{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  h3{
   
-
-}
-a{
-
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 34px;
-  text-align: left;
-color:#52525B ;  
-
-
-}
-
-
-
-.Premium {
-  :first-child{
-
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: left;
-  color: #18181B; 
-
-  }
-  :last-child{
-
-    font-family: Inter;
+    font-family: Outfit;
     font-size: 42px;
     font-weight: 700;
     line-height: 48px;
+  color: #18181B;  
+  max-width: 453px;
+  text-align: center;
+  
+  
+  }
+  p{
+  
+  
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color:#12141D ;
+  }
+  
+  
+  
+      }
+      .business{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 80px;
+        justify-content: center;
+        margin-bottom: 120px;
+        gap: 40px;
+        .card1{
+          box-shadow: 0px 0px 1px 0px ;
+  
+  max-width : 330px;
+  padding: 30px;
+  .Started{
+    background-color: #18181B;
+    padding : 13.5px   78.5px  13px  78.5px  ;
+  color:#E4E4E7 ;
+  display: block;
+  text-align: center;
+  border: 1px solid #E4E4E7;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
+  
+  p{
+  
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
     text-align: left;
-    color:#18181B ;
-    margin-top: 12px ;
-    margin-bottom: 20px;
+    color:#52525B ;
+    
+  
+  }
+  a{
+  
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: left;
+  color:#52525B ;  
+  
+  
+  }
+  
+  
+  
+  .Premium {
+    :first-child{
+  
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: left;
+    color: #18181B; 
+  
+    }
+    :last-child{
+  
+      font-family: Inter;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: left;
+      color:#18181B ;
+      margin-top: 12px ;
+      margin-bottom: 20px;
+      
+    }
+  
+  }
+  .active{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    color: #18181B;
+    margin-bottom: 15px;
     
   }
-
-}
-.active{
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: left;
-  color: #18181B;
-  margin-bottom: 15px;
   
-}
-
-      }
+        }
+    }
   }
-}
-}
+
     }
