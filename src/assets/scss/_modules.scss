@@ -636,57 +636,48 @@ background-color: #FFFFFF;
     align-items: center;
     padding-top: 18px;
 padding-bottom: 18px;
-.checkbox-container {
+
+
+  
+.form-group input {
+   
+  display: none;
+}
+
+.form-group label {
+  position: relative;
+}
+
+.form-group label:before {
+  content:'';
+  border: 2px solid  #ACACB0CC;
+  ;
+  padding: 10px;
   display: inline-block;
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
-  cursor: pointer;
-  font-size: 16px;
+  border-radius: 50%;
 
-  input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+}
 
-  }
-
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
-    border-radius: 50%;
-
-    &::after{
-      position: absolute;
-      content: "\f00c";
- font-family: "Font Awesome 6 Free";
-      top:50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-  
-          }
-  }
-
+.form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 
 }
 
 
+.form-group input:checked + label:before {
+  background-color:#4A5AFF ;
 
-
-
-
-
-.checkbox-container input:checked ~ .checkmark {
-  background-color: #2196F3;
 }
-
-
-
-
 
 
 h5{
